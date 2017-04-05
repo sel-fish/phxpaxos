@@ -6,15 +6,18 @@ PHX_EXTLIB_PATH = $(PHX_LIB_PATH)/extlib
 
 NANOPBPATH=$(SRC_BASE_PATH)/third_party/nanopb/
 
-PROTOBUF_INCLUDE_PATH=$(SRC_BASE_PATH)/third_party/protobuf/include/
+# PROTOBUF_INCLUDE_PATH=$(SRC_BASE_PATH)/third_party/protobuf/include/
+PROTOBUF_INCLUDE_PATH=$(SRC_BASE_PATH)/third_party/protobuf/src
 GRPC_INCLUDE_PATH=$(SRC_BASE_PATH)/third_party/grpc/include 
 LEVELDB_INCLUDE_PATH=$(SRC_BASE_PATH)/third_party/leveldb/include/
 GLOG_INCLUDE_PATH=$(SRC_BASE_PATH)/third_party/glog/src/
 PHXPAXOS_INCLUDE_PATH=$(SRC_BASE_PATH)/include
 PHXPAXOS_PLUGIN_PATH=$(SRC_BASE_PATH)/plugin/include
 
-PROTOBUF_LIB_PATH=$(SRC_BASE_PATH)/third_party/protobuf/lib
-LEVELDB_LIB_PATH=$(SRC_BASE_PATH)/third_party/leveldb/lib/
+# PROTOBUF_LIB_PATH=$(SRC_BASE_PATH)/third_party/protobuf/lib
+PROTOBUF_LIB_PATH=$(SRC_BASE_PATH)/third_party/protobuf/src
+# LEVELDB_LIB_PATH=$(SRC_BASE_PATH)/third_party/leveldb/lib/
+LEVELDB_LIB_PATH=$(SRC_BASE_PATH)/third_party/leveldb
 GLOG_LIB_PATH=$(SRC_BASE_PATH)/third_party/glog/lib
 GRPC_LIBE_PATH=$(SRC_BASE_PATH)/third_party/grpc/lib
 OPEN_SSL_LIB_PATH=$(SRC_BASE_PATH)/third_party/openssl/lib
@@ -43,7 +46,8 @@ LDFLAGS+=-Wl,--no-as-needed
 
 #=====================================================================================================
 
-PROTOC = $(SRC_BASE_PATH)/third_party/protobuf/bin/protoc
+PROTOC = $(SRC_BASE_PATH)/third_party/protobuf/src/protoc
+# PROTOC = $(SRC_BASE_PATH)/third_party/protobuf/bin/protoc
 PROTOS_PATH = .
 GRPC_CPP_PLUGIN = grpc_cpp_plugin
 GRPC_CPP_PLUGIN_PATH ?= `which $(GRPC_CPP_PLUGIN)`

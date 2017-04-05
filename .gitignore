@@ -1,2 +1,12 @@
 .idea
 *.pyc
+
+Makefile
+*.o
+
+*.pb.cc
+*.pb.h
+
+.lib
+
+third_party/glog
