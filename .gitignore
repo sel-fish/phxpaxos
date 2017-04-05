@@ -11,7 +11,4 @@ Makefile
 *.pb.h
 
 .lib
-
-third_party/glog
-
 .sbin
