@@ -20,7 +20,8 @@ PROTOBUF_LIB_PATH=$(SRC_BASE_PATH)/third_party/protobuf/src/.libs
 LEVELDB_LIB_PATH=$(SRC_BASE_PATH)/third_party/leveldb
 # GLOG_LIB_PATH=$(SRC_BASE_PATH)/third_party/glog/lib
 GLOG_LIB_PATH=$(SRC_BASE_PATH)/third_party/glog/.libs
-GRPC_LIBE_PATH=$(SRC_BASE_PATH)/third_party/grpc/lib
+# GRPC_LIBE_PATH=$(SRC_BASE_PATH)/third_party/grpc/lib
+GRPC_LIBE_PATH=$(SRC_BASE_PATH)/third_party/grpc/libs/opt
 OPEN_SSL_LIB_PATH=$(SRC_BASE_PATH)/third_party/openssl/lib
 PHXPAXOS_LIB_PATH=$(SRC_BASE_PATH)/.lib/extlib
 
@@ -51,7 +52,8 @@ PROTOC = $(SRC_BASE_PATH)/third_party/protobuf/src/protoc
 # PROTOC = $(SRC_BASE_PATH)/third_party/protobuf/bin/protoc
 PROTOS_PATH = .
 GRPC_CPP_PLUGIN = grpc_cpp_plugin
-GRPC_CPP_PLUGIN_PATH ?= `which $(GRPC_CPP_PLUGIN)`
+# GRPC_CPP_PLUGIN_PATH ?= `which $(GRPC_CPP_PLUGIN)`
+GRPC_CPP_PLUGIN_PATH = $(SRC_BASE_PATH)/third_party/grpc/bins/opt/grpc_cpp_plugin
 NANOPB_PLUGIN_PATH=$(NANOPBPATH)/generator/protoc-gen-nanopb
 
 vpath %.proto $(PROTOS_PATH)
