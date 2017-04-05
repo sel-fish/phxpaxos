@@ -15,13 +15,14 @@ PHXPAXOS_INCLUDE_PATH=$(SRC_BASE_PATH)/include
 PHXPAXOS_PLUGIN_PATH=$(SRC_BASE_PATH)/plugin/include
 
 # PROTOBUF_LIB_PATH=$(SRC_BASE_PATH)/third_party/protobuf/lib
-PROTOBUF_LIB_PATH=$(SRC_BASE_PATH)/third_party/protobuf/src
+PROTOBUF_LIB_PATH=$(SRC_BASE_PATH)/third_party/protobuf/src/.libs
 # LEVELDB_LIB_PATH=$(SRC_BASE_PATH)/third_party/leveldb/lib/
 LEVELDB_LIB_PATH=$(SRC_BASE_PATH)/third_party/leveldb
-GLOG_LIB_PATH=$(SRC_BASE_PATH)/third_party/glog/lib
+# GLOG_LIB_PATH=$(SRC_BASE_PATH)/third_party/glog/lib
+GLOG_LIB_PATH=$(SRC_BASE_PATH)/third_party/glog/.libs
 GRPC_LIBE_PATH=$(SRC_BASE_PATH)/third_party/grpc/lib
 OPEN_SSL_LIB_PATH=$(SRC_BASE_PATH)/third_party/openssl/lib
-PHXPAXOS_LIB_PATH=$(SRC_BASE_PATH)/lib
+PHXPAXOS_LIB_PATH=$(SRC_BASE_PATH)/.lib/extlib
 
 ifeq ($(debug),y)
 # (1) Debug

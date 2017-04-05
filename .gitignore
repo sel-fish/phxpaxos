@@ -1,3 +1,6 @@
+*
+!*.*
+
 .idea
 *.pyc
 
@@ -10,3 +13,5 @@ Makefile
 .lib
 
 third_party/glog
+
+.sbin
